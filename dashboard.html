@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wolf Trade Markets</title>
+</head>
+
+<body>
+    <!-- Painel de Moedas Real-Time -->
+    <div class="crypto-panel">
+
+        <h2>Mercado em Tempo Real</h2>
+
+        <div class="crypto-container">
+            <!-- Bitcoin -->
+            <div class="crypto-card" id="btc-card">
+                <h3>Bitcoin (BTC)</h3>
+                <p class="price">Carregando...</p>
+                <canvas id="btc-chart" height="60"></canvas>
+            </div>
+            <!-- Ethereum -->
+            <div class="crypto-card" id="eth-card">
+                <h3>Ethereum (ETH)</h3>
+                <p class="price">Carregando...</p>
+                <canvas id="eth-chart" height="60"></canvas>
+            </div>
+            <!-- XRP -->
+            <div class="crypto-card" id="xrp-card">
+                <h3>Ripple (XRP)</h3>
+                <p class="price">Carregando...</p>
+                <canvas id="xrp-chart" height="60"></canvas>
+            </div>
+            <!-- Solana -->
+            <div class="crypto-card" id="sol-card">
+                <h3>Solana (SOL)</h3>
+                <p class="price">Carregando...</p>
+                <canvas id="sol-chart" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://jsdelivr.net"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CENTRALIZAÇÃO DA TELA INTEIRA */
+body {
+    background-color: #0b0e14; /* Fundo escuro estilo trading */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CAIXA DO FORMULÁRIO (O BLOCO CENTRAL) */
+form {
+    background-color: #151a26; /* Cor do bloco central */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #222c3d;
+    display: flex;
+    flex-direction: column; /* Força todos os elementos a ficarem um abaixo do outro */
+    align-items: center;    /* Centraliza os textos internamente */
+}
+
+/* TÍTULO (WOLF TRADE MARKETS) */
+h1 {
+    font-size: 24px;
+    color: #00e676; /* Verde Neon */
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* TEXTOS AUXILIARES E LABELS */
+label {
+    align-self: flex-start; /* Alinha o texto "E-mail:" e "Senha:" perfeitamente à esquerda do input */
+    font-size: 13px;
+    color: #90a4ae;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* CAMPOS DE ENTRADA (INPUTS) */
+input {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #1e2638;
+    border: 1px solid #2c3b54;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00e676;
+    box-shadow: 0 0 8px rgba(0, 230, 118, 0.2);
+}
+
+/* BOTÃO DE ENTRAR / ENVIAR */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00e676;
+    border: none;
+    border-radius: 6px;
+    color: #0b0e14;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #00b359;
+}
+
+/* TEXTO DE BAIXO ("NÃO TEM UMA CONTA?") */
+p {
+    font-size: 14px;
+    color: #90a4ae;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* LINK ("CADASTRE-SE AQUI") */
+a {
+    color: #29b6f6; /* Azul claro para dar destaque e ficar legível no fundo escuro */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 4px;
+}
+
+a:hover {
+    color: #81d4fa;
+    text-decoration: underline;
+}
+
+/* Container que envelopa o painel inteiro */
+.crypto-panel {
+    padding: 30px;
+    background-color: #121214; /* Fundo escuro premium */
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Título principal do mercado */
+.crypto-panel h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    border-left: 5px solid #2ecc71; /* Detalhe verde na lateral */
+    padding-left: 15px;
+}
+
+/* Grid que coloca as moedas lado a lado e quebra de linha se faltar espaço */
+.crypto-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* O uniforme dos cartões (sua classe .crypto-card) */
+.crypto-card {
+    background: #1a1a1e;
+    border: 1px solid #2a2a30;
+    border-radius: 10px;
+    padding: 22px;
+    flex: 1;
+    min-width: 220px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Efeito sutil quando passa o mouse por cima */
+.crypto-card:hover {
+    transform: translateY(-4px);
+    border-color: #2ecc71;
+}
+
+/* Estilo do Nome da Criptomoeda */
+.crypto-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    color: #9ca3af; /* Cinza claro suave */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo do Preço Dinâmico */
+.crypto-card .price {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2ecc71; /* Verde neon de alta cotação */
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.2); /* Brilho sutil */
+}
