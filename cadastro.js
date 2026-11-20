@@ -11,7 +11,7 @@ formulario.addEventListener("submit", async (event) => {
   const nomeDigitado = document.getElementById("nome").value;
 
   // 4. Enviamos os pacotes de dados para o seu servidor Node.js na porta 3000
-  const resposta = await fetch("http://localhost:3000/cadastro", {
+  const resposta = await fetch(`${window.location.origin}/cadastro`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

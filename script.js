@@ -73,6 +73,17 @@ app.post("/login", (req, res) => {
   });
 });
 
+const path = require('path');
+
+// 1. Libera o acesso para os arquivos de estilo (CSS), imagens e scripts do site
+app.use(express.static(__dirname));
+
+// 2. Entrega a tela de login (Wolf Trade Markets) na rota principal
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html')); 
+})
+
 app.listen(3000, () => {
+  
   console.log("Sucesso, estamos online na porta 3000!");
 });
